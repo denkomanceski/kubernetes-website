@@ -206,6 +206,7 @@ Verify the [local preview](http://localhost:1313/docs/reference/generated/kubern
 
 ```shell
 cd <web-base>
+make docker-image
 make docker-serve
 ```
 
