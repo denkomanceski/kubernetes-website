@@ -87,8 +87,8 @@ enabled and kubernetes client and server version v1.16 or later.
 {{< /note >}}
 
 The examples in this section demonstrate how ephemeral containers appear in
-the API. Users would normally use a `kubectl` plugin for troubleshooting that
-would automate these steps.
+the API. For a more practical example of troubleshooting, see the [Debug a
+Running Pod](/docs/tasks/debug-application-cluster/debug-running-pod/) task.
 
 Ephemeral containers are created using the `ephemeralcontainers` subresource
 of Pod, which can be demonstrated using `kubectl --raw`. First describe
@@ -205,5 +205,13 @@ PID   USER     TIME  COMMAND
    24 root      0:00 sh
    29 root      0:00 ps auxww
 ```
+
+{{% /capture %}}
+
+
+{{% capture whatsnext %}}
+
+* Learn how to easily [debug a running Pod](/docs/tasks/debug-application-cluster/debug-running-pod/)
+  using `kubectl debug`.
 
 {{% /capture %}}
